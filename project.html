@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Aha_logo.svg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT</title>
+    <style>
+        
+      nav {
+        height: 70px;
+        width: 100%;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        /* backdrop-filter: blur(10px);
+        position: fixed; */
+
+
+    }
+    .nav_logo img{
+        width: 60px;
+        height: 60px;
+        padding: 5px 5px;
+    }
+    nav  .nav_items{
+        position: absolute;
+        right: 20px;
+    }
+    .nav_items a{
+        text-decoration: none;
+        font-size: 20px;
+        padding: 15px 15px;
+        color: rgb(178, 172, 168);
+
+    }
+    .nav_items a:hover{
+        color: rgb(244, 160, 4);
+    }
+    .carousel-inner {
+      width: 70%;
+      height: 490px;
+    }
+    .carousel-inner{
+      margin: 10px 0px 0px 140px;
+
+    }
+    .carousel-control-prev-icon{
+      position: relative;
+      left: 80px;
+    }
+    .carousel-control-next-icon{
+      position: relative;
+      right: 80px;
+    }
+    h1{
+      color: aliceblue;
+      display: inline;
+    }
+    .frequent-image {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-evenly;
+    }
+    .frequent-image img{
+      margin: 2px ;
+    }
+    .frequent-image img:hover{
+      transform: translateY(-20px);
+      transition: all .5s ease-in-out;
+      border-radius: 10px;
+    }
+    #carouselExampleAutoplaying{
+      margin-top: 80px;
+    }
+    
+
+</style>
+</head>
+<body style="background-color: rgb(17, 16, 16);">
+    <nav>
+        <div class="nav_logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Aha_OTT_Logo.svg/800px-Aha_OTT_Logo.svg.png" alt="">
+        </div>
+        <div class="nav_items">
+            <a href="carouselExampleAutoplaying">home</a>
+            <a href="#freq">frequently watched</a>
+            <a href="">recent</a>
+            <a href="">top rated</a>
+            <a href="">favourites</a>
+            <a href="">about</a>
+            <a href="">signup</a>
+        </div>
+    </nav>
+    <div id = "carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.91-cdn.com/hub/wp-content/uploads/2022/09/Aha-subscription.png"   class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://m.media-amazon.com/images/I/71Jxq2p5YWL._AC_UF894,1000_QL80_.jpg" height="330px" width="100%"  class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://marketplace.canva.com/EAFVCFkAg3w/1/0/1131w/canva-red-and-black-horror-movie-poster-AOBSIAmLWOs.jpg" height="330px" width="100%" class="d-block w-100" alt="...">
+             
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+  
+    </div>
+     <!-- home section ends 
+    frequent section starts -->
+      <h1>Frequently Watched</h1>
+      <div class="frequent-image" id="freq">
+        <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2022/04/bholaa-01-1.jpg" height="270px" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsf5jA3Ll6_6N1EAo9L5lBJJxDEXbRCGPHiw&usqp=CAU"height="270px" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTOW7oPl28KLGfV3bEDcz8K0McCO1V6NncSw&usqp=CAU"height="270px" alt="">
+        <img src="https://www.indiablooms.com/showbiz_pic/2017/TOMBRAIDER-1505820047.jpg"height="270px" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQDEAkhWO-DCB-IatMYC9wxjTuWY6z0ffIlA&usqp=CAU"height="270px" alt="">
+        <img src="https://images.jdmagicbox.com/movies/centralized_154396132023_06_26_05_46_02_220.jpg"height="270px" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKdkadn1atH9lceiTBJrUFIwXylOamRmAhfQ&usqp=CAU"height="270px" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9DIFS6gqnMdmk1n7DBE3AQjRSSNC1wcR13Q&usqp=CAU"height="270px" alt="">
+        <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2021/03/salaar-1.jpg"height="270px" alt="">
+        <img src="https://qqcdnpictest.mxplay.com/pic/6574fa0a788a4908e9e5927cbbfaf378/en/2x3/320x480/8f6b8d2e87dafee76f1a628ae0b9e3bf_1280x1920.webp"height="270px" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTja8jvDD5Xig5hN8wS2OYNdIk9v_IgGsVtCg&usqp=CAU"height="200px" alt="">
+        <img src="https://media.newstrack.in/uploads/entertainment-news/hollywood-news/Jan/11/big_thumb/1_61dd475fd9982.jpg"height="270px" alt="">
+      </div>
+
+</body>
+</html>
